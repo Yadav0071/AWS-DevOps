@@ -1,0 +1,2 @@
+suppose in Terraform there are 20 resources are running in aws we want to delete one resource from there can we do that ..?
+ans:-  yes we  can do that by this commannd Terraform destroy_target "resource type"."resource name"
