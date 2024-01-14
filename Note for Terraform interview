@@ -1,2 +1,29 @@
-suppose in Terraform there are 20 resources are running in aws we want to delete one resource from there can we do that ..?
+Q.suppose in Terraform there are 20 resources are running in aws we want to delete one resource from there can we do that ..?
 ans:-  yes we  can do that by this commannd Terraform destroy_target "resource type"."resource name"
+
+Q.How we provide variable durring run time ..?
+Ans: Genrally we provide the variable using the command var.variable in variable .tf file but when  want to provide variable at run time 
+in that time we need to just blank the variable default value 
+What is used of remote backend ..?
+remote backend used when multiple devloper work same state file from deffrent location in taht suitation we used remote backened so  
+
+Q. how managed terraform code in multiple environment..?
+ans - we can managed terraform code in multiple environment by using workspace and reuse module, Remote state,  
+Workspaces:
+Use Terraform workspaces to manage multiple environments within the same configuration. Workspaces allow you to maintain separate state files for each environment while using a shared set of Terraform files.
+Example:
+bash
+Copy code
+terraform workspace new dev
+terraform workspace new prod
+
+Reuse Modules:
+Use Terraform modules to encapsulate and reuse infrastructure components across environments. This promotes code reuse and consistency.
+Define generic modules and customize them using environment-specific variables
+
+Q.what is the draw back terraform..?
+the draws back in terraform are there is no eror handling option in terraform and only we used Hasicrop code language avilable and also
+script generation is not avilable. 
+
+
+
